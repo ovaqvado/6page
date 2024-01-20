@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index5.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Отметка присутствующих на паре</h1>
+
+    <form id="attendanceForm">
+        <label for="group">Выберите группу:</label>
+        <select id="group" required>
+            <option value="group1">Группа 1</option>
+            <option value="group2">Группа 2</option>
+            <option value="group3">Группа 3</option>
+        </select><br><br>
+        <label for="lessonNumber">Номер пары:</label>
+        <input type="number" id="lessonNumber" min="1" required><br><br>
+        <label for="lessonTopic">Тема занятия:</label>
+        <input type="text" id="lessonTopic" required><br><br>
+        <label>Отметьте присутствующих:</label><br>
+        <input type="checkbox" id="student1" name="student" value="student1">
+        <label for="student1">Студент 1</label><br>
+        <input type="checkbox" id="student2" name="student" value="student2">
+        <label for="student2">Студент 2</label><br>
+        <input type="checkbox" id="student3" name="student" value="student3">
+        <label for="student3">Студент 3</label><br>
+
+        <input type="button" value="Отметить присутствующих" onclick="markAttendance()">
+    </form>
+
+    <h2>Отмеченные пары</h2>
+    <select id="markedLessons" onchange="showAttendance()">
+        <option value="lesson1">Пара 1</option>
+        <option value="lesson2">Пара 2</option>
+        <option value="lesson3">Пара 3</option>
+    </select>
+    <div id="attendanceList"></div>
+
+    <div class="link_dz">
+        <a href="../page1/index.html">Первое задание</a>
+        <a href="../page2/index2.html">Второе задание</a>
+        <a href="../page3/index3.html">Третье задание</a>
+        <a href="../page4/index4.html">Четвертое задание</a>
+        <a href="../page6/index6.html">Шестое задание</a>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+
+</html>

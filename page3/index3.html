@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index3.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Введите текст и его стили:</h1>
+    <form id="textForm">
+        <input type="text" id="inputText" placeholder="Введите текст" required><br><br>
+        <label for="fontSize">Размер шрифта:</label>
+        <input type="number" id="fontSize" min="0" max="69" required><br><br>
+        <label for="textColor">Цвет текста:</label>
+        <input type="color" id="textColor" required><br><br>
+        <label for="fontFamily">Шрифт:</label>
+        <select id="fontFamily" required>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select><br><br>
+        <input type="submit" value="Применить">
+    </form>
+    <div id="styledText"></div>
+
+
+    <div class="link_dz">
+        <a href="../page1/index.html">Первое задание</a>
+        <a href="../page2/index2.html">Второе задание</a>
+        <a href="../page4/index4.html">Четвертое задание</a>
+        <a href="../page5/index5.html">Пятое задание</a>
+        <a href="../page6/index6.html">Шестое задание</a>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+
+</html>

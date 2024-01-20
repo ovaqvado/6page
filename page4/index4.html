@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index4.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="orderForm">
+        <label for="book">Выберите книгу:</label>
+        <select id="book" required>
+            <option value="book1">Книга 1</option>
+            <option value="book2">Книга 2</option>
+            <option value="book3">Книга 3</option>
+        </select><br><br>
+        <label for="quantity">Количество экземпляров:</label>
+        <input type="number" id="quantity" min="1" required><br><br>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" required><br><br>
+        <label for="deliveryDate">Дата доставки:</label>
+        <input type="date" id="deliveryDate" required><br><br>
+        <label for="address">Адрес доставки:</label>
+        <input type="text" id="address" required><br><br>
+        <label for="comment">Комментарий:</label><br>
+        <textarea id="comment" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Оформить заказ">
+    </form>
+
+    <div id="orderSummary"></div>
+
+    <div class="link_dz">
+        <a href="../page1/index.html">Первое задание</a>
+        <a href="../page2/index2.html">Второе задание</a>
+        <a href="../page3/index3.html">Третье задание</a>
+        <a href="../page5/index5.html">Пятое задание</a>
+        <a href="../page6/index6.html">Шестое задание</a>
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+
+</html>
